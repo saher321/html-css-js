@@ -1,35 +1,90 @@
-let a = ["pny", "nav", "training"];
+const a = [
+  {
+    name: "áli",
+    age: "áli",
+    mark: "áli",
+    aa: [1, 2, 3, true, "ali"],
+  },
+  {
+    name: "áli",
+    age: "áli",
+    mark: "áli",
+    aa: [1, 2, 3, true, "ali"],
+  },
+  {
+    name: "áli",
+    age: "áli",
+    mark: "áli",
+    aa: [1, 2, 3, true, "ali"],
+  },
+];
 
-// console.log(a);
+const data = {
+  name: "áli",
+  age: "áli",
+  mark: "áli",
+  aa: [1, 2, 3, true, "ali"],
+};
+let d = 123;
 
-for (i = 0; i < a.length; i++) {
-  if (a[i].includes("training")) {
-    a[i] = "ttttt";
+const { name } = data;
+
+console.log(a);
+const c = [234, ...a];
+console.log(c);
+
+// array
+// Object
+// spreed operator,
+// destructor operator
+
+// || && !
+// function add() {
+//   if (1 == 1) {
+//     console.log("object");
+//   } else {
+//     console.log("object dfafafa");
+//   }
+// }
+
+// add();
+
+const da = () => {
+  if (1 == 1) {
+    console.log("object");
+  } else {
+    console.log("object dfafafa");
   }
-  console.log(a[i]);
+};
+
+da();
+
+{
+  da();
 }
 
-console.log(a)
+// function
+// arrow function
+// condition
+// operators
+// assignment
 
-// const data = a.map((item) =>{
-//     if(item.includes('pny')){
-//         item = item.replace(item,'text')
-//     }
-//     return item
-// });
-// console.log(a)
-// console.log(data)
+const aa = [1, 2, 3, true, "ali"];
 
-function maths(x, y, symbol) {
-  if (symbol == "+") {
-    return x + y;
-  } else if (symbol == "-") {
-    return x - y;
-  } else if (symbol == "*") {
-    return x * y;
-  } else if (symbol == "/") {
-    return x / y;
-  }
+// loops
+for (i = 0; i < aa.length; i++) {
+  console.log(aa[i]);
 }
 
-// console.log(maths(10,10,'*'))
+// dom
+// bom
+// events
+
+const header = document.getElementById("header");
+document.getElementById("btn").addEventListener("click", () => {
+  header.style.display = "none";
+});
+
+function del() {
+  header.style.display = "none";
+}
